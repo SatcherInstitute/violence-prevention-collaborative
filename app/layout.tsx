@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import "./vpc.css";
 
 export const metadata: Metadata = {
   title: "Violence Prevention Collaborative of Metro Atlanta",
@@ -18,15 +19,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
         <link rel="apple-touch-icon" href="/images/webclip.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="/css/normalize.css" rel="stylesheet" type="text/css" />
-        <link href="/css/components.css" rel="stylesheet" type="text/css" />
-        <link href="/css/satcherhealthinstitute.css" rel="stylesheet" type="text/css" />
         <script
           type="text/javascript"
           src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
