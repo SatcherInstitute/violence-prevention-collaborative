@@ -9,7 +9,7 @@ export default function Nav() {
     <div role="banner" className="nav-bar">
       <div className="navigation-container">
         <div className="navigation-left-wrapper">
-          <a href="/" className="brand nav-wordmark">
+          <a href="/" className="nav-wordmark">
             <span className="nav-wordmark-title">Violence Prevention Collaborative</span>
             <span className="nav-wordmark-sub">of Metro Atlanta</span>
           </a>

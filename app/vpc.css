@@ -359,7 +359,7 @@ blockquote {
   font-family: var(--font-condensed);
   font-size: 0.7rem;
   font-weight: 400;
-  color: var(--color-yellow);
+  color: var(--color-brand);
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
