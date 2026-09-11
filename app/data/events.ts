@@ -22,6 +22,12 @@ export interface VPCEvent {
 
 export const events: VPCEvent[] = [
   {
+    id: "2027-symposium",
+    title: "2027 Violence Prevention Symposium",
+    date: "2027-03-04",
+    summary: "Details and location to be announced.",
+  },
+  {
     id: "2026-pre-symposium",
     title: "2026 Violence Prevention Pre-Symposium",
     date: "2026-04-16",
@@ -72,9 +78,53 @@ export const events: VPCEvent[] = [
     ],
   },
   {
-    id: "2027-symposium",
-    title: "2027 Violence Prevention Symposium",
-    date: "2027-03-04",
-    summary: "Details and location to be announced.",
+    id: "2025-symposium",
+    title: "2025 Violence Prevention Symposium",
+    date: "2025-02-26",
+    location: "Emory Miller-Ward Alumni House, Atlanta, GA",
+    summary:
+      "A full-day convening bringing together science, public health, and community leaders to examine gun violence as a public health crisis and build measurable action plans for Metro Atlanta.",
+    sections: [
+      {
+        heading: "Featured Speakers",
+        bullets: [
+          "President Gregory L. Fenves, Emory University",
+          "Valerie Montgomery Rice, MD, Morehouse School of Medicine",
+          "David Satcher, MD, PhD, Satcher Institute at Morehouse School of Medicine",
+          "Dr. Bernice A. King, The King Center for Nonviolent Social Change",
+          "Sidney Barron, Board Chair, 100 Black Men of Atlanta",
+        ],
+      },
+      {
+        heading: "Primary Objectives",
+        bullets: [
+          "Examine violence in Atlanta using data as a public health crisis.",
+          "Establish unified data systems for tracking regional violence trends.",
+          "Explore evidence-based approaches to violence reduction.",
+          "Engage youth in prevention program development.",
+          "Collaborate with organizations and policymakers on sustainable strategies.",
+          "Create measurable action plans with accountability measures.",
+        ],
+      },
+    ],
+  },
+  {
+    id: "2023-symposium",
+    title: "2023 Violence Prevention Symposium",
+    date: "2023-02-16",
+    location: "Clark Atlanta University, Atlanta, GA",
+    summary:
+      "The inaugural Violence Prevention Symposium, presented by the Satcher Health Leadership Institute and The King Center, convened partners to address gun violence as a public health emergency.",
+    sections: [
+      {
+        heading: "Event Details",
+        bullets: [
+          "Date: Thursday, February 16, 2023, 10:00 AM – 4:00 PM",
+          "Location: Clark Atlanta University, Atlanta, GA",
+          "Presented by: Satcher Health Leadership Institute at Morehouse School of Medicine and The King Center",
+          "Sponsored by: 100 Black Men of Atlanta Inc. and Clark Atlanta University",
+        ],
+      },
+    ],
   },
 ];
