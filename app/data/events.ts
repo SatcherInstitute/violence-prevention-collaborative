@@ -78,6 +78,35 @@ export const events: VPCEvent[] = [
     ],
   },
   {
+    id: "2024-pre-symposium",
+    title: "2024 Violence Prevention Pre-Symposium",
+    date: "2024-09-18",
+    location: "Morehouse School of Medicine, Atlanta, GA",
+    summary:
+      "An invitation-only roundtable bringing together community leaders, public health experts, elected officials, and law enforcement to review lethal violence data and develop collaborative action plans with measurable outcomes.",
+    sections: [
+      {
+        heading: "Key Objectives",
+        bullets: [
+          "Review data tools on lethal violence trends, including new Health Equity Tracker topics on gun-involved deaths.",
+          "Identify priority concerns across homicide, suicide, youth deaths, and intersectional outcomes.",
+          "Explore innovative prevention strategies including mental health awareness and suicide prevention.",
+          "Develop collaborative action plans with measurable outcomes.",
+        ],
+      },
+    ],
+    quotes: [
+      {
+        text: ""Gun violence is a public health issue and remains a leading cause of death among U.S. adolescents, disproportionately affecting Black males."",
+        attribution: "Sandra Harris-Hooker, PhD, Senior Vice President for External Affairs and Innovation, Morehouse School of Medicine",
+      },
+      {
+        text: ""The anti-gun violence committee serves as a vital force for change, uniting voices to advocate for safer communities."",
+        attribution: "Sidney Barron, Chairman, 100 Black Men of Atlanta, Inc.",
+      },
+    ],
+  },
+  {
     id: "2025-symposium",
     title: "2025 Violence Prevention Symposium",
     date: "2025-02-26",
