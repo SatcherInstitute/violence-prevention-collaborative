@@ -899,6 +899,7 @@ h3.yellow {
 
 .footer-tagline {
   font-family: var(--font-condensed);
+  color: rgba(255, 255, 255, 0.72);
 }
 
 .footer-contact-link {
