@@ -109,7 +109,7 @@ export const events: VPCEvent[] = [
   {
     id: "2025-symposium",
     title: "2025 Violence Prevention Symposium",
-    date: "2025-02-26",
+    date: "2025-03-31",
     location: "Emory Miller-Ward Alumni House, Atlanta, GA",
     summary:
       "A full-day convening bringing together science, public health, and community leaders to examine gun violence as a public health crisis and build measurable action plans for Metro Atlanta.",
@@ -143,15 +143,23 @@ export const events: VPCEvent[] = [
     date: "2023-02-16",
     location: "Clark Atlanta University, Atlanta, GA",
     summary:
-      "The inaugural Violence Prevention Symposium, presented by the Satcher Health Leadership Institute and The King Center, convened partners to address gun violence as a public health emergency.",
+      "The inaugural Violence Prevention Symposium, co-organized by 100 Black Men of Atlanta, the Satcher Health Leadership Institute, and The King Center, established gun violence as a coordinated public health emergency requiring urgent, data-driven response.",
     sections: [
       {
-        heading: "Event Details",
+        heading: "Keynote Speakers",
         bullets: [
-          "Date: Thursday, February 16, 2023, 10:00 AM – 4:00 PM",
-          "Location: Clark Atlanta University, Atlanta, GA",
-          "Presented by: Satcher Health Leadership Institute at Morehouse School of Medicine and The King Center",
-          "Sponsored by: 100 Black Men of Atlanta Inc. and Clark Atlanta University",
+          "Dr. David Satcher, Founding Director, Satcher Institute at Morehouse School of Medicine; former U.S. Surgeon General",
+          "Dr. Mark Rosenberg, violence prevention researcher; former President & CEO, Task Force for Global Health",
+          "Dr. Joseph V. Sakran, Vice Chair of Clinical Operations, Johns Hopkins Medicine",
+          "Dr. Mercy, Director of Violence Prevention, Centers for Disease Control and Prevention",
+        ],
+      },
+      {
+        heading: "Agenda",
+        bullets: [
+          "Morning: Keynote presentations on gun violence prevention and public health approaches.",
+          "Midday: Networking lunch.",
+          "Afternoon: Youth roundtable discussions and panels featuring violence prevention program leaders, law enforcement, and conflict resolution training.",
         ],
       },
     ],
