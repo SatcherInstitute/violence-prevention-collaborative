@@ -16,6 +16,10 @@ export default function Home() {
               Atlanta
             </h1>
 
+            <h2 className="tagline">
+              <em>Bringing science, health systems, and community together to prevent violence</em>
+            </h2>
+
             <div className="w-layout-hflex logo-container">
               <img
                 src="/images/kx_600x.webp"
@@ -43,14 +47,6 @@ export default function Home() {
             </div>
 
             <article className="rich-text-block-dark-mode w-richtext">
-              <h1 className="tagline">
-                <strong>
-                  <em>
-                    Bringing science, health systems, and community together to
-                    prevent violence
-                  </em>
-                </strong>
-              </h1>
               <h2>Mission</h2>
               <p>
                 The Violence Prevention Collaborative of Metro Atlanta brings
