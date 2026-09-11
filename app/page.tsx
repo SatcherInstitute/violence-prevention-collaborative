@@ -30,7 +30,7 @@ export default function Home() {
                 sizes="(max-width: 479px) 100vw, 430px"
                 width="430"
                 height="120"
-                alt="satcher institute at morehouse school of medicine logo"
+                alt="Satcher Institute for Health Equity at Morehouse School of Medicine logo"
                 className="vpc-logo shli"
               />
               <img
@@ -133,8 +133,7 @@ export default function Home() {
                       —a powerhouse partnership between{" "}
                       <strong>100 Black Men of Atlanta</strong>,{" "}
                       <strong>
-                        The Satcher Health Leadership Institute (SHLI) at
-                        Morehouse School of Medicine
+                        the Satcher Institute for Health Equity at Morehouse School of Medicine
                       </strong>
                       , and <strong>The King Center</strong>—hosted an
                       invite-only roundtable discussion to address the escalating
@@ -252,13 +251,12 @@ export default function Home() {
             <article className="rich-text-block-dark-mode w-richtext">
               <h2>Member Organizations</h2>
               <h3 className="yellow">
-                Satcher Health Leadership Institute - Morehouse School of
-                Medicine
+                Satcher Institute for Health Equity at Morehouse School of Medicine
               </h3>
               <p>
-                The Satcher Health Leadership Institute (SHLI) advances health
+                The Satcher Institute for Health Equity at Morehouse School of Medicine advances health
                 equity research, policy, leadership development, and data
-                transparency. Within the Collaborative, SHLI provides scientific
+                transparency. Within the Collaborative, the Satcher Institute provides scientific
                 leadership and public health framing for violence prevention
                 efforts. The Institute leads data strategy and dashboard
                 development, integrates violence prevention into medical and
@@ -373,7 +371,7 @@ export default function Home() {
                   <div className="vpc-logo-frame">
                     <img
                       src="/images/SHLI_WORDMARKS_SHLI_white_H.avif"
-                      alt="satcher institute at morehouse school of medicine logo"
+                      alt="Satcher Institute for Health Equity at Morehouse School of Medicine logo"
                       width="200"
                       height="120"
                       className="vpc-logo-card shli"
@@ -381,7 +379,7 @@ export default function Home() {
                   </div>
                   <div className="org-and-button-container">
                     <h6 className="h6-heading vpc-card-heading">
-                      Satcher Health Leadership Institute
+                      Satcher Institute for Health Equity
                     </h6>
                     <a
                       href="https://satcherinstitute.org"

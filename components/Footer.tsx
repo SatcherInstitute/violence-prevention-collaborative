@@ -13,7 +13,7 @@ export default function Footer() {
         <div className="footer-col">
           <div className="overline footer-label">Member Organizations</div>
           <a href="https://satcherinstitute.org" target="_blank" rel="noopener noreferrer" className="footer-link">
-            Satcher Health Leadership Institute
+            Satcher Institute for Health Equity
           </a>
           <a href="https://100blackmen-atlanta.org/" target="_blank" rel="noopener noreferrer" className="footer-link">
             100 Black Men of Atlanta
