@@ -11,9 +11,9 @@ export default function Home() {
         <div className="header-section">
           <div className="vpc-body-container">
             <h1 className="hero-heading vpc-header">
-              Violence Prevention{" "}
-              <span className="text-color-yellow">Collaborative</span> of Metro
-              Atlanta
+              Violence Prevention Collaborative
+              <br />
+              of Metro Atlanta
             </h1>
 
             <h2 className="tagline">

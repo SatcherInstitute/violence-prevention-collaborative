@@ -257,7 +257,7 @@ blockquote {
 
 .nav-bar {
   z-index: 999;
-  background-color: rgba(255, 255, 255, 0.92);
+  background-color: rgba(43, 43, 43, 0.95);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -267,12 +267,12 @@ blockquote {
   position: sticky;
   top: 0;
   transition: background-color 0.4s;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(8px);
 }
 
 .nav-bar:hover {
-  background-color: #fff;
+  background-color: var(--color-jet);
 }
 
 .navigation-container {
@@ -321,7 +321,7 @@ blockquote {
 }
 
 .navigation-link {
-  color: var(--color-dark);
+  color: rgba(255, 255, 255, 0.85);
   font-size: var(--text-base);
   font-weight: 500;
   letter-spacing: -0.01em;
@@ -335,8 +335,8 @@ blockquote {
 }
 
 .navigation-link:hover {
-  background-color: var(--color-light-blue-30);
-  color: var(--color-jet);
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #fff;
 }
 
 /* VPC text wordmark in nav */
@@ -351,7 +351,7 @@ blockquote {
   font-family: var(--font-roboto);
   font-size: 0.95rem;
   font-weight: 600;
-  color: var(--color-dark);
+  color: #fff;
   letter-spacing: -0.01em;
 }
 
@@ -359,7 +359,7 @@ blockquote {
   font-family: var(--font-condensed);
   font-size: 0.7rem;
   font-weight: 400;
-  color: var(--color-brand);
+  color: var(--color-yellow);
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -978,10 +978,10 @@ h3.yellow {
     top: 80px;
     right: 0;
     left: 0;
-    background: #fff;
+    background: var(--color-jet);
     flex-direction: column;
     padding: 16px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     z-index: 998;
   }
 
