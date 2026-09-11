@@ -214,6 +214,25 @@ export default function Home() {
               </blockquote>
             </article>
 
+            {/* Resource Hub Teaser */}
+            <div className="resource-hub-teaser">
+              <div className="resource-hub-teaser-text">
+                <p className="overline" style={{ color: "var(--color-yellow)" }}>Resource Hub</p>
+                <h2 className="resource-hub-teaser-heading">
+                  Tools, Programs & Partners
+                </h2>
+                <p className="resource-hub-teaser-body">
+                  A curated library of data tools, community programs, training
+                  curricula, policy resources, and crisis services — organized
+                  to help partners find what they need and connect across Metro
+                  Atlanta.
+                </p>
+              </div>
+              <a href="/resources" className="outlined-cta w-inline-block resource-hub-cta">
+                <div className="outlined-cta-text">Browse Resources</div>
+              </a>
+            </div>
+
             {/* Partner CTA Cards */}
             <div className="w-layout-hflex vpc-cta-buttons-container">
               <div className="w-layout-grid vpc-card-grid">

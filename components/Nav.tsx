@@ -19,6 +19,9 @@ export default function Nav() {
             role="navigation"
             className={`navigation-menu${mobileOpen ? " w--nav-menu-open" : ""}`}
           >
+            <a href="/resources" className="navigation-link">
+              Resources
+            </a>
             <a href="mailto:bhammond@msm.edu" className="navigation-link">
               Contact
             </a>
