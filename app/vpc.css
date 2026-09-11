@@ -466,6 +466,7 @@ blockquote {
   color: var(--color-seasalt);
 }
 
+.rich-text-block-dark-mode h1,
 .rich-text-block-dark-mode h2 {
   color: var(--color-seasalt);
   margin-bottom: 20px;
