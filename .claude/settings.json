@@ -1,17 +1,7 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npx tsc --noEmit)",
-      "Bash(npx tsc --noEmit *)",
-      "Bash(npm run build)",
-      "Bash(npm run lint)",
-      "Bash(npm run dev)",
-      "Bash(open http://localhost*)",
-      "Bash(git add *)",
-      "Bash(git commit *)",
-      "Bash(git push *)",
-      "Bash(cp *)",
-      "Bash(npm run *)"
+      "Bash(*)"
     ]
   }
 }

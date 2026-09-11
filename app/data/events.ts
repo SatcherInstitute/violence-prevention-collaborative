@@ -97,11 +97,11 @@ export const events: VPCEvent[] = [
     ],
     quotes: [
       {
-        text: ""Gun violence is a public health issue and remains a leading cause of death among U.S. adolescents, disproportionately affecting Black males."",
+        text: "“Gun violence is a public health issue and remains a leading cause of death among U.S. adolescents, disproportionately affecting Black males.”",
         attribution: "Sandra Harris-Hooker, PhD, Senior Vice President for External Affairs and Innovation, Morehouse School of Medicine",
       },
       {
-        text: ""The anti-gun violence committee serves as a vital force for change, uniting voices to advocate for safer communities."",
+        text: "“The anti-gun violence committee serves as a vital force for change, uniting voices to advocate for safer communities.”",
         attribution: "Sidney Barron, Chairman, 100 Black Men of Atlanta, Inc.",
       },
     ],
