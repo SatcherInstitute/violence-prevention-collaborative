@@ -438,6 +438,9 @@ blockquote {
   margin-top: 20px;
   margin-bottom: 20px;
   position: relative;
+  background: var(--color-dark);
+  border-radius: 16px;
+  padding: 2rem 3rem;
 }
 
 /* Hero org logos */
@@ -902,6 +905,8 @@ h3.yellow {
 
 .resource-hub-cta {
   flex-shrink: 0;
+  width: auto;
+  min-width: 0;
 }
 
 @media screen and (max-width: 767px) {
@@ -1194,6 +1199,14 @@ h3.yellow {
   color: rgba(255, 255, 255, 0.5);
 }
 
+.event-date-year {
+  font-family: var(--font-condensed);
+  font-size: 0.65rem;
+  letter-spacing: 0.06em;
+  color: rgba(255, 255, 255, 0.35);
+  margin-top: 2px;
+}
+
 .event-card-meta {
   display: flex;
   flex-direction: column;
@@ -1350,6 +1363,35 @@ h3.yellow {
 .footer-tagline {
   font-family: var(--font-condensed);
   color: rgba(255, 255, 255, 0.72);
+}
+
+.footer-org-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-bottom: 1rem;
+}
+
+.footer-org-group:last-child {
+  padding-bottom: 0;
+}
+
+.footer-social-row {
+  display: flex;
+  gap: 8px;
+}
+
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.4);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-social-link:hover {
+  color: var(--color-yellow);
 }
 
 .footer-contact-link {
@@ -1612,4 +1654,196 @@ h3.yellow {
   .site-footer-bottom {
     text-align: center;
   }
+}
+
+
+/* ----------------------------------------------------------------
+   THEME TOGGLE BUTTON
+   ---------------------------------------------------------------- */
+
+.theme-toggle {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+  padding: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+  flex-shrink: 0;
+}
+
+.theme-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+[data-theme="light"] .theme-toggle {
+  border-color: rgba(43, 43, 43, 0.2);
+  color: rgba(43, 43, 43, 0.65);
+}
+
+[data-theme="light"] .theme-toggle:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+  color: var(--color-dark);
+}
+
+
+/* ----------------------------------------------------------------
+   LIGHT MODE OVERRIDES
+   ---------------------------------------------------------------- */
+
+/* Nav */
+[data-theme="light"] .nav-bar {
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .nav-bar:hover {
+  background-color: #fff;
+}
+
+[data-theme="light"] .nav-wordmark-title {
+  color: var(--color-dark);
+}
+
+[data-theme="light"] .nav-wordmark-sub {
+  color: var(--color-brand);
+}
+
+[data-theme="light"] .navigation-link {
+  color: rgba(43, 43, 43, 0.8);
+}
+
+[data-theme="light"] .navigation-link:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: var(--color-dark);
+}
+
+[data-theme="light"] .navigation-menu-button {
+  border-color: var(--color-border);
+  color: var(--color-jet);
+}
+
+[data-theme="light"] .navigation-menu {
+  background: #fff;
+}
+
+/* Hero / Header */
+[data-theme="light"] .header-wrapper {
+  background-color: #f0f4f9;
+}
+
+[data-theme="light"] .hero-heading {
+  color: var(--color-penn-blue);
+}
+
+[data-theme="light"] .tagline {
+  border-top-color: rgba(0, 0, 0, 0.1);
+  border-bottom-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Rich text dark-mode articles */
+[data-theme="light"] .rich-text-block-dark-mode p {
+  color: var(--color-jet);
+}
+
+[data-theme="light"] .rich-text-block-dark-mode h1,
+[data-theme="light"] .rich-text-block-dark-mode h2 {
+  color: var(--color-dark);
+}
+
+[data-theme="light"] .rich-text-block-dark-mode h3 {
+  color: var(--color-brand);
+}
+
+[data-theme="light"] .rich-text-block-dark-mode blockquote {
+  color: var(--color-jet);
+}
+
+[data-theme="light"] .dark-mode-link {
+  color: var(--color-brand);
+}
+
+/* Events */
+[data-theme="light"] .events-group-label {
+  border-bottom-color: rgba(0, 0, 0, 0.12);
+}
+
+[data-theme="light"] .event-card {
+  background: #fff;
+  border-color: var(--color-border);
+}
+
+[data-theme="light"] .event-card:hover {
+  border-color: var(--color-light-blue);
+}
+
+[data-theme="light"] .event-date-day {
+  color: var(--color-dark);
+}
+
+[data-theme="light"] .event-date-weekday {
+  color: rgba(43, 43, 43, 0.5);
+}
+
+[data-theme="light"] .event-date-year {
+  color: rgba(43, 43, 43, 0.35);
+}
+
+[data-theme="light"] .event-card-title {
+  color: var(--color-dark);
+}
+
+[data-theme="light"] .event-card-location {
+  color: rgba(43, 43, 43, 0.5);
+}
+
+[data-theme="light"] .event-card-summary {
+  color: rgba(43, 43, 43, 0.72);
+}
+
+[data-theme="light"] .event-card-toggle {
+  color: rgba(43, 43, 43, 0.4);
+}
+
+[data-theme="light"] .event-card-body {
+  border-top-color: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .event-section-body {
+  color: rgba(43, 43, 43, 0.8);
+}
+
+[data-theme="light"] .event-section-bullets li {
+  color: rgba(43, 43, 43, 0.75);
+}
+
+[data-theme="light"] .event-quote p {
+  color: rgba(43, 43, 43, 0.85);
+}
+
+[data-theme="light"] .event-quote cite {
+  color: rgba(43, 43, 43, 0.5);
+}
+
+/* Logo bar */
+[data-theme="light"] .logo-container {
+  background: var(--color-surface-ink);
+}
+
+/* Resource hub teaser */
+[data-theme="light"] .resource-hub-teaser {
+  background: rgba(0, 0, 0, 0.03);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .resource-hub-teaser-heading {
+  color: var(--color-dark);
+}
+
+[data-theme="light"] .resource-hub-teaser-body {
+  color: rgba(43, 43, 43, 0.7);
 }

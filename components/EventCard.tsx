@@ -9,6 +9,7 @@ function formatDate(iso: string) {
   return {
     month: d.toLocaleString("en-US", { month: "short" }).toUpperCase(),
     day: String(day),
+    year: String(year),
     weekday: d.toLocaleString("en-US", { weekday: "short" }).toUpperCase(),
     full: d.toLocaleString("en-US", { month: "long", day: "numeric", year: "numeric" }),
   };
@@ -33,6 +34,7 @@ export default function EventCard({ event }: { event: VPCEvent }) {
           <span className="event-date-month">{date.month}</span>
           <span className="event-date-day">{date.day}</span>
           <span className="event-date-weekday">{date.weekday}</span>
+          <span className="event-date-year">{date.year}</span>
         </div>
         <div className="event-card-meta">
           <span className="event-card-title">{event.title}</span>

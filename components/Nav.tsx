@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Nav() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -26,6 +27,7 @@ export default function Nav() {
               Contact
             </a>
           </nav>
+          <ThemeToggle />
           <button
             className="navigation-menu-button"
             aria-label="Toggle menu"
