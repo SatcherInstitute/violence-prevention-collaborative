@@ -5,10 +5,7 @@ export default function Footer() {
 
         <div className="footer-col footer-col--brand">
           <p className="footer-org-name">Violence Prevention Collaborative of Metro Atlanta</p>
-          <p className="footer-tagline">
-            Bringing science, health systems, and community together to prevent violence.
-          </p>
-          <a href="mailto:bhammond@msm.edu" className="footer-contact-link">
+<a href="mailto:bhammond@msm.edu" className="footer-contact-link">
             bhammond@msm.edu
           </a>
         </div>
