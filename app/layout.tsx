@@ -22,6 +22,13 @@ export const metadata: Metadata = {
       },
     ],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Violence Prevention Collaborative of Metro Atlanta",
+    description:
+      "Gun violence is a public health emergency. The Violence Prevention Collaborative unites 100 Black Men, The King Center, and MSM to coordinate research, data, and community action across Metro Atlanta.",
+    images: ["/images/og-image.png"],
+  },
 };
 
 export default function RootLayout({
