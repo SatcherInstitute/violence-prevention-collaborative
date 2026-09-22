@@ -104,7 +104,7 @@ export default function Home() {
                 Satcher Institute at Morehouse School of Medicine
               </h3>
               <p>
-                The Satcher Institute provides scientific leadership and data strategy for the Collaborative, including the Health Equity Tracker — an accessible tool for analyzing health disparities and gun violence trends across Metro Atlanta.
+                The Satcher Institute provides scientific leadership and data strategy for the Collaborative, including the Health Equity Tracker, an accessible tool for analyzing health disparities and gun violence trends across Metro Atlanta.
               </p>
               <h3>100 Black Men of Atlanta</h3>
               <p>
@@ -122,10 +122,10 @@ export default function Home() {
               </p>
               <h2>Our Focus Areas</h2>
               <ul>
-                <li><strong>Data &amp; Regional Analysis</strong> — Demographic and geographic analysis across Metro Atlanta to support targeted prevention strategies.</li>
-                <li><strong>Education &amp; Training</strong> — Curricula and workshops for students, health professionals, veterans, survivor families, and community leaders.</li>
-                <li><strong>Health System &amp; Community Coordination</strong> — Hospital- and community-based interventions that address cycles of violence and suicide risk.</li>
-                <li><strong>Public Awareness</strong> — Data-driven communication that frames gun violence as preventable and responsive to coordinated public health action.</li>
+                <li><strong>Data &amp; Regional Analysis:</strong> Demographic and geographic analysis across Metro Atlanta to support targeted prevention strategies.</li>
+                <li><strong>Education &amp; Training:</strong> Curricula and workshops for students, health professionals, veterans, survivor families, and community leaders.</li>
+                <li><strong>Health System &amp; Community Coordination:</strong> Hospital- and community-based interventions that address cycles of violence and suicide risk.</li>
+                <li><strong>Public Awareness:</strong> Data-driven communication that frames gun violence as preventable and responsive to coordinated public health action.</li>
               </ul>
             </article>
 
@@ -137,8 +137,8 @@ export default function Home() {
                   Tools, Programs & Partners
                 </h2>
                 <p className="resource-hub-teaser-body">
-                  A curated library of data tools, community programs, training
-                  curricula, policy resources, and crisis services — organized
+                  A library of data tools, community programs, training
+                  curricula, policy resources, and crisis services, organized
                   to help partners find what they need and connect across Metro
                   Atlanta.
                 </p>
@@ -166,22 +166,57 @@ export default function Home() {
           <p className="overline connect-overline">Connect</p>
           <h2 className="connect-heading">Member Organizations</h2>
 
-          <div className="connect-org-grid">
-            <a href="https://satcherinstitute.org" target="_blank" rel="noopener noreferrer" className="connect-org-card">
-              <img src="/images/SHLI_WORDMARKS_SHLI_white_H.avif" alt="Satcher Institute at Morehouse School of Medicine" className="connect-org-logo shli" />
-              <div className="connect-org-name">Satcher Institute at Morehouse School of Medicine</div>
-              <div className="connect-org-link">satcherinstitute.org ↗</div>
-            </a>
-            <a href="https://100blackmen-atlanta.org/" target="_blank" rel="noopener noreferrer" className="connect-org-card">
-              <img src="/images/100LOGO5X5BW-Transparency-white.webp" alt="100 Black Men of Atlanta" className="connect-org-logo bmoa" />
-              <div className="connect-org-name">100 Black Men of Atlanta Inc.</div>
-              <div className="connect-org-link">100blackmen-atlanta.org ↗</div>
-            </a>
-            <a href="https://thekingcenter.org" target="_blank" rel="noopener noreferrer" className="connect-org-card">
-              <img src="/images/kx_600x.webp" alt="The King Center for Nonviolent Social Change" className="connect-org-logo tkc" />
-              <div className="connect-org-name">The King Center for Nonviolent Social Change</div>
-              <div className="connect-org-link">thekingcenter.org ↗</div>
-            </a>
+          <div className="w-layout-grid vpc-card-grid">
+            <div className="vpc-card shli">
+              <div className="vpc-logo-frame">
+                <img src="/images/SHLI_WORDMARKS_SHLI_white_H.avif" alt="Satcher Institute at Morehouse School of Medicine logo" width="200" height="120" className="vpc-logo-card shli" />
+              </div>
+              <div className="org-and-button-container">
+                <h6 className="h6-heading vpc-card-heading">Satcher Institute at Morehouse School of Medicine</h6>
+                <a href="https://satcherinstitute.org" target="_blank" rel="noopener noreferrer" className="outlined-cta w-inline-block">
+                  <div className="outlined-cta-text">Learn More</div>
+                  <div className="open-in-new-icon shli-blue w-embed">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="currentColor">
+                      <path d="M216-144q-29.7 0-50.85-21.15Q144-186.3 144-216v-528q0-29.7 21.15-50.85Q186.3-816 216-816h264v72H216v528h528v-264h72v264q0 29.7-21.15 50.85Q773.7-144 744-144H216Zm171-192-51-51 357-357H576v-72h240v240h-72v-117L387-336Z" />
+                    </svg>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div className="vpc-card bmoa">
+              <div className="vpc-logo-frame">
+                <img src="/images/100LOGO5X5BW-Transparency-white.webp" alt="100 Black Men of Atlanta logo" width="120" height="120" className="vpc-logo-card bmoa" />
+              </div>
+              <div className="org-and-button-container">
+                <h6 className="h6-heading vpc-card-heading">100 Black Men of Atlanta Inc.</h6>
+                <a href="https://100blackmen-atlanta.org/" target="_blank" rel="noopener noreferrer" className="outlined-cta w-inline-block">
+                  <div className="outlined-cta-text">Learn More</div>
+                  <div className="open-in-new-icon shli-blue w-embed">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="currentColor">
+                      <path d="M216-144q-29.7 0-50.85-21.15Q144-186.3 144-216v-528q0-29.7 21.15-50.85Q186.3-816 216-816h264v72H216v528h528v-264h72v264q0 29.7-21.15 50.85Q773.7-144 744-144H216Zm171-192-51-51 357-357H576v-72h240v240h-72v-117L387-336Z" />
+                    </svg>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div className="vpc-card tkc">
+              <div className="vpc-logo-frame">
+                <img src="/images/kx_600x.webp" alt="The King Center for Nonviolent Social Change logo" width="120" height="120" className="vpc-logo-card tkc" />
+              </div>
+              <div className="org-and-button-container">
+                <h6 className="h6-heading vpc-card-heading">The King Center for Nonviolent Social Change</h6>
+                <a href="https://thekingcenter.org" target="_blank" rel="noopener noreferrer" className="outlined-cta w-inline-block">
+                  <div className="outlined-cta-text">Learn More</div>
+                  <div className="open-in-new-icon shli-blue w-embed">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="currentColor">
+                      <path d="M216-144q-29.7 0-50.85-21.15Q144-186.3 144-216v-528q0-29.7 21.15-50.85Q186.3-816 216-816h264v72H216v528h528v-264h72v264q0 29.7-21.15 50.85Q773.7-144 744-144H216Zm171-192-51-51 357-357H576v-72h240v240h-72v-117L387-336Z" />
+                    </svg>
+                  </div>
+                </a>
+              </div>
+            </div>
           </div>
 
           <div className="connect-contact">

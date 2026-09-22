@@ -34,7 +34,7 @@ export const resources: Resource[] = [
     org: "Satcher Institute at Morehouse School of Medicine",
     url: "https://healthequitytracker.org",
     description:
-      "Free, interactive data platform covering a broad range of health equity topics — including gun violence, HIV, maternal mortality, COVID-19, diabetes, and mental health — alongside determinants of health such as poverty, uninsurance, housing instability, food insecurity, and air quality. Searchable by race, age, geography, and outcome type across Georgia and the U.S.",
+      "Free, interactive data platform covering a broad range of health equity topics, including gun violence, HIV, maternal mortality, COVID-19, diabetes, and mental health, alongside determinants of health such as poverty, uninsurance, housing instability, food insecurity, and air quality. Searchable by race, age, geography, and outcome type across Georgia and the U.S.",
     category: "Data & Research",
     tags: ["data", "atlanta", "national", "youth", "free"],
   },
@@ -144,7 +144,7 @@ export const resources: Resource[] = [
     org: "SAMHSA",
     url: "https://988lifeline.org",
     description:
-      "24/7 crisis support by call, text, or chat. Connects individuals in mental health crises — including those at risk of firearm self-harm — to local crisis centers and counselors.",
+      "24/7 crisis support by call, text, or chat. Connects individuals in mental health crises, including those at risk of firearm self-harm, to local crisis centers and counselors.",
     category: "Crisis Intervention",
     tags: ["crisis-intervention", "health", "national"],
   },
