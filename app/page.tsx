@@ -148,119 +148,6 @@ export default function Home() {
               </a>
             </div>
 
-            {/* Partner CTA Cards */}
-            <div className="w-layout-hflex vpc-cta-buttons-container">
-              <div className="w-layout-grid vpc-card-grid">
-                <div className="vpc-card shli">
-                  <div className="vpc-logo-frame">
-                    <img
-                      src="/images/SHLI_WORDMARKS_SHLI_white_H.avif"
-                      alt="Satcher Institute at Morehouse School of Medicine logo"
-                      width="200"
-                      height="120"
-                      className="vpc-logo-card shli"
-                    />
-                  </div>
-                  <div className="org-and-button-container">
-                    <h6 className="h6-heading vpc-card-heading">
-                      Satcher Institute
-                    </h6>
-                    <a
-                      href="https://satcherinstitute.org"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="outlined-cta w-inline-block"
-                    >
-                      <div className="outlined-cta-text">Learn More</div>
-                      <div className="open-in-new-icon shli-blue w-embed">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          height="20px"
-                          viewBox="0 -960 960 960"
-                          width="20px"
-                          fill="currentColor"
-                        >
-                          <path d="M216-144q-29.7 0-50.85-21.15Q144-186.3 144-216v-528q0-29.7 21.15-50.85Q186.3-816 216-816h264v72H216v528h528v-264h72v264q0 29.7-21.15 50.85Q773.7-144 744-144H216Zm171-192-51-51 357-357H576v-72h240v240h-72v-117L387-336Z" />
-                        </svg>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-
-                <div className="vpc-card bmoa">
-                  <div className="vpc-logo-frame">
-                    <img
-                      src="/images/100LOGO5X5BW-Transparency-white.webp"
-                      alt="100 black men of atlanta logo"
-                      width="120"
-                      height="120"
-                      className="vpc-logo-card bmoa"
-                    />
-                  </div>
-                  <div className="org-and-button-container">
-                    <h6 className="h6-heading vpc-card-heading">
-                      100 Black Men of Atlanta Inc.
-                    </h6>
-                    <a
-                      href="https://100blackmen-atlanta.org/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="outlined-cta w-inline-block"
-                    >
-                      <div className="outlined-cta-text">Learn More</div>
-                      <div className="open-in-new-icon shli-blue w-embed">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          height="20px"
-                          viewBox="0 -960 960 960"
-                          width="20px"
-                          fill="currentColor"
-                        >
-                          <path d="M216-144q-29.7 0-50.85-21.15Q144-186.3 144-216v-528q0-29.7 21.15-50.85Q186.3-816 216-816h264v72H216v528h528v-264h72v264q0 29.7-21.15 50.85Q773.7-144 744-144H216Zm171-192-51-51 357-357H576v-72h240v240h-72v-117L387-336Z" />
-                        </svg>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-
-                <div className="vpc-card tkc">
-                  <div className="vpc-logo-frame">
-                    <img
-                      src="/images/kx_600x.webp"
-                      sizes="(max-width: 479px) 47vw, 120px"
-                      width="120"
-                      height="120"
-                      alt="the king center logo"
-                      className="vpc-logo-card tkc"
-                    />
-                  </div>
-                  <div className="org-and-button-container">
-                    <h6 className="h6-heading vpc-card-heading">
-                      The King Center
-                    </h6>
-                    <a
-                      href="https://thekingcenter.org"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="outlined-cta w-inline-block"
-                    >
-                      <div className="outlined-cta-text">Learn More</div>
-                      <div className="open-in-new-icon shli-blue w-embed">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          height="20px"
-                          viewBox="0 -960 960 960"
-                          width="20px"
-                          fill="currentColor"
-                        >
-                          <path d="M216-144q-29.7 0-50.85-21.15Q144-186.3 144-216v-528q0-29.7 21.15-50.85Q186.3-816 216-816h264v72H216v528h528v-264h72v264q0 29.7-21.15 50.85Q773.7-144 744-144H216Zm171-192-51-51 357-357H576v-72h240v240h-72v-117L387-336Z" />
-                        </svg>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
 
           {/* Decorative bloom */}
@@ -273,17 +160,35 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Contact section */}
-      <section id="contact" className="contact-section">
-        <div className="contact-inner">
-          <p className="overline resources-overline">Contact</p>
-          <h2 className="contact-heading">Get in Touch</h2>
-          <p className="contact-body">
-            For general inquiries or questions about this website, reach out by email.
-          </p>
-          <a href="mailto:bhammond@msm.edu" className="contact-email">
-            bhammond@msm.edu
-          </a>
+      {/* Connect section — orgs + contact */}
+      <section id="contact" className="connect-section">
+        <div className="connect-inner">
+          <p className="overline connect-overline">Connect</p>
+          <h2 className="connect-heading">Member Organizations</h2>
+
+          <div className="connect-org-grid">
+            <a href="https://satcherinstitute.org" target="_blank" rel="noopener noreferrer" className="connect-org-card">
+              <img src="/images/SHLI_WORDMARKS_SHLI_white_H.avif" alt="Satcher Institute at Morehouse School of Medicine" className="connect-org-logo shli" />
+              <div className="connect-org-name">Satcher Institute at Morehouse School of Medicine</div>
+              <div className="connect-org-link">satcherinstitute.org ↗</div>
+            </a>
+            <a href="https://100blackmen-atlanta.org/" target="_blank" rel="noopener noreferrer" className="connect-org-card">
+              <img src="/images/100LOGO5X5BW-Transparency-white.webp" alt="100 Black Men of Atlanta" className="connect-org-logo bmoa" />
+              <div className="connect-org-name">100 Black Men of Atlanta Inc.</div>
+              <div className="connect-org-link">100blackmen-atlanta.org ↗</div>
+            </a>
+            <a href="https://thekingcenter.org" target="_blank" rel="noopener noreferrer" className="connect-org-card">
+              <img src="/images/kx_600x.webp" alt="The King Center for Nonviolent Social Change" className="connect-org-logo tkc" />
+              <div className="connect-org-name">The King Center for Nonviolent Social Change</div>
+              <div className="connect-org-link">thekingcenter.org ↗</div>
+            </a>
+          </div>
+
+          <div className="connect-contact">
+            <h2 className="connect-heading">Contact</h2>
+            <p className="connect-body">For general inquiries or questions about this website:</p>
+            <a href="mailto:bhammond@msm.edu" className="contact-email">bhammond@msm.edu</a>
+          </div>
         </div>
       </section>
 
