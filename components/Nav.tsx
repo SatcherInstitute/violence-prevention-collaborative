@@ -31,7 +31,7 @@ export default function Nav() {
             ) : (
               <a href="/" className="navigation-link">Home</a>
             )}
-            <a href="mailto:bhammond@msm.edu" className="navigation-link">Contact</a>
+            <a href={isHome ? "#contact" : "/#contact"} className="navigation-link">Contact</a>
           </nav>
           <ThemeToggle />
           <button

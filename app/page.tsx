@@ -296,6 +296,20 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Contact section */}
+      <section id="contact" className="contact-section">
+        <div className="contact-inner">
+          <p className="overline resources-overline">Contact</p>
+          <h2 className="contact-heading">Get in Touch</h2>
+          <p className="contact-body">
+            For general inquiries or questions about this website, reach out by email.
+          </p>
+          <a href="mailto:bhammond@msm.edu" className="contact-email">
+            bhammond@msm.edu
+          </a>
+        </div>
+      </section>
+
       <Footer />
     </>
   );
