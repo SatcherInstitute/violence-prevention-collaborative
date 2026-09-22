@@ -129,29 +129,6 @@ export default function Home() {
               </ul>
             </article>
 
-            {/* Get Involved */}
-            <article id="get-involved" className="rich-text-block-dark-mode w-richtext">
-              <h2>Get Involved</h2>
-              <p>
-                The Collaborative welcomes anyone committed to preventing
-                violence across Metro Atlanta, including organizations,
-                researchers, health professionals, educators, policymakers, and
-                community members.
-              </p>
-              <p>
-                To learn more or explore partnership opportunities, please{" "}
-                <a href="mailto:bhammond@msm.edu" className="dark-mode-link">
-                  reach out by email
-                </a>{" "}
-                or visit our member orgs&apos; websites using the buttons below.
-              </p>
-              <p>&nbsp;</p>
-              <blockquote>
-                Together, we can strengthen coordination, expand awareness, and
-                support prevention efforts across Metro Atlanta.
-              </blockquote>
-            </article>
-
             {/* Resource Hub Teaser */}
             <div className="resource-hub-teaser">
               <div className="resource-hub-teaser-text">
