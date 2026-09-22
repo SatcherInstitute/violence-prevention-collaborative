@@ -34,9 +34,9 @@ export const resources: Resource[] = [
     org: "Satcher Institute at Morehouse School of Medicine",
     url: "https://healthequitytracker.org",
     description:
-      "Interactive data platform tracking gun-involved deaths by race, age, geography, and outcome type across Georgia and the U.S., including homicides, suicides, and youth-involved deaths.",
+      "Free, interactive data platform covering a broad range of health equity topics — including gun violence, HIV, maternal mortality, COVID-19, diabetes, and mental health — alongside determinants of health such as poverty, uninsurance, housing instability, food insecurity, and air quality. Searchable by race, age, geography, and outcome type across Georgia and the U.S.",
     category: "Data & Research",
-    tags: ["data", "atlanta", "national", "youth"],
+    tags: ["data", "atlanta", "national", "youth", "free"],
   },
   {
     id: "cdc-wisqars",

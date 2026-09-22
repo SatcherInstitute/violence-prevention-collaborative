@@ -28,8 +28,8 @@ export default function EventsList() {
       {past.length > 0 && (
         <div className="events-group">
           <h3 className="events-group-label">Past Events</h3>
-          {past.map((e) => (
-            <EventCard key={e.id} event={e} />
+          {past.slice(0, 3).map((e) => (
+            <EventCard key={e.id} event={e} isPast />
           ))}
         </div>
       )}

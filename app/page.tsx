@@ -47,7 +47,7 @@ export default function Home() {
               />
             </div>
 
-            <article className="rich-text-block-dark-mode w-richtext">
+            <article id="mission" className="rich-text-block-dark-mode w-richtext">
               <h2>Mission</h2>
               <p>
                 The Violence Prevention Collaborative of Metro Atlanta brings
@@ -95,104 +95,42 @@ export default function Home() {
               />
             </div>
 
-            <EventsList />
+            <div id="events" style={{ width: "100%" }}><EventsList /></div>
 
             {/* Member Organizations */}
-            <article className="rich-text-block-dark-mode w-richtext">
+            <article id="organizations" className="rich-text-block-dark-mode w-richtext">
               <h2>Member Organizations</h2>
               <h3 className="yellow">
                 Satcher Institute at Morehouse School of Medicine
               </h3>
               <p>
-                The Satcher Institute at Morehouse School of Medicine advances health
-                equity research, policy, leadership development, and data
-                transparency. Within the Collaborative, the Satcher Institute provides scientific
-                leadership and public health framing for violence prevention
-                efforts. The Institute leads data strategy and dashboard
-                development, integrates violence prevention into medical and
-                public health education, and connects regional efforts to broader
-                national health equity research. The Institute&apos;s Health
-                Equity Tracker supports this work by providing accessible,
-                data-driven analysis of health disparities and prevention
-                opportunities, including gun violence.
+                The Satcher Institute provides scientific leadership and data strategy for the Collaborative, including the Health Equity Tracker — an accessible tool for analyzing health disparities and gun violence trends across Metro Atlanta.
               </p>
-              <p>&nbsp;</p>
               <h3>100 Black Men of Atlanta</h3>
               <p>
-                100 Black Men of Atlanta is a longstanding leader in mentoring,
-                youth development, and civic engagement, with deep and trusted
-                relationships in communities most impacted by violence. Within
-                the Collaborative, the organization leads community engagement
-                and conflict resolution programming, elevates youth voice and
-                lived experience, and convenes regional symposiums and awareness
-                events. Its Anti-Gun Violence initiatives bridge public health
-                strategy with on-the-ground community action.
+                100 Black Men of Atlanta brings trusted community relationships in neighborhoods most impacted by violence, leading engagement, conflict resolution programming, and the Collaborative&apos;s regional symposiums.
               </p>
-              <p>&nbsp;</p>
               <h3>
-                The Martin Luther King Jr. Center for Nonviolent Social Change
+                The King Center for Nonviolent Social Change
               </h3>
               <p>
-                Founded on the philosophy and teachings of Dr. Martin Luther
-                King Jr., The King Center advances nonviolence as a practical
-                framework for social change. In the Collaborative, The King
-                Center anchors violence prevention efforts in values-based
-                leadership and nonviolent principles, provides education on
-                conflict resolution and restorative approaches, and supports
-                public dialogue grounded in dignity and respect.
+                The King Center grounds the Collaborative&apos;s work in nonviolent principles and values-based leadership, contributing education in conflict resolution and restorative approaches to community safety.
               </p>
-              <p>&nbsp;</p>
               <h3>Public Health Advisors</h3>
               <p>
-                The Collaborative includes current and former public health
-                leaders from federal, state, and local agencies, including
-                professionals with experience at the Centers for Disease Control
-                and Prevention and the Georgia Department of Public Health.
-                These advisors help ensure alignment with evidence-based public
-                health practices, guide data integration and regional analysis,
-                and support evaluation to promote measurable impact.
+                Current and former public health leaders from the CDC and Georgia Department of Public Health advise on evidence-based practices, data integration, and regional analysis.
               </p>
-              <p>&nbsp;</p>
-              <h2>
-                <strong>Our Focus Areas</strong>
-              </h2>
-              <h3 className="yellow">
-                <strong>Data &amp; Regional Analysis</strong>
-              </h3>
-              <p>
-                Coordinating demographic and geographic analysis across Metro
-                Atlanta to support targeted, measurable prevention strategies.
-              </p>
-              <p>&nbsp;</p>
-              <h3>
-                <strong>Education &amp; Training</strong>
-              </h3>
-              <p>
-                Developing curricula and workshops for students, health
-                professionals, veterans, survivor families, and community
-                leaders.
-              </p>
-              <p>&nbsp;</p>
-              <h3>
-                <strong>Health System &amp; Community Coordination</strong>
-              </h3>
-              <p>
-                Supporting hospital- and community-based intervention approaches
-                that address cycles of violence and suicide risk.
-              </p>
-              <p>&nbsp;</p>
-              <h3>
-                <strong>Public Awareness</strong>
-              </h3>
-              <p>
-                Promoting clear, data-driven communication that frames gun
-                violence as preventable and responsive to coordinated public
-                health action.
-              </p>
+              <h2>Our Focus Areas</h2>
+              <ul>
+                <li><strong>Data &amp; Regional Analysis</strong> — Demographic and geographic analysis across Metro Atlanta to support targeted prevention strategies.</li>
+                <li><strong>Education &amp; Training</strong> — Curricula and workshops for students, health professionals, veterans, survivor families, and community leaders.</li>
+                <li><strong>Health System &amp; Community Coordination</strong> — Hospital- and community-based interventions that address cycles of violence and suicide risk.</li>
+                <li><strong>Public Awareness</strong> — Data-driven communication that frames gun violence as preventable and responsive to coordinated public health action.</li>
+              </ul>
             </article>
 
             {/* Get Involved */}
-            <article className="rich-text-block-dark-mode w-richtext">
+            <article id="get-involved" className="rich-text-block-dark-mode w-richtext">
               <h2>Get Involved</h2>
               <p>
                 The Collaborative welcomes anyone committed to preventing

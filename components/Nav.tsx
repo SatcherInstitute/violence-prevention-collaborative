@@ -1,10 +1,13 @@
 "use client";
 
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import ThemeToggle from "./ThemeToggle";
 
 export default function Nav() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const pathname = usePathname();
+  const isHome = pathname === "/";
 
   return (
     <div role="banner" className="nav-bar">
@@ -20,12 +23,15 @@ export default function Nav() {
             role="navigation"
             className={`navigation-menu${mobileOpen ? " w--nav-menu-open" : ""}`}
           >
-            <a href="/resources" className="navigation-link">
-              Resources
-            </a>
-            <a href="mailto:bhammond@msm.edu" className="navigation-link">
-              Contact
-            </a>
+            {isHome ? (
+              <>
+                <a href="#events" className="navigation-link">Events</a>
+                <a href="/resources" className="navigation-link">Resources</a>
+              </>
+            ) : (
+              <a href="/" className="navigation-link">Home</a>
+            )}
+            <a href="mailto:bhammond@msm.edu" className="navigation-link">Contact</a>
           </nav>
           <ThemeToggle />
           <button

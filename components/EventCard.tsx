@@ -15,7 +15,7 @@ function formatDate(iso: string) {
   };
 }
 
-export default function EventCard({ event }: { event: VPCEvent }) {
+export default function EventCard({ event, isPast }: { event: VPCEvent; isPast?: boolean }) {
   const [open, setOpen] = useState(false);
   const date = formatDate(event.date);
   const hasDetails =
@@ -24,7 +24,7 @@ export default function EventCard({ event }: { event: VPCEvent }) {
     event.image;
 
   return (
-    <div className={`event-card${open ? " event-card--open" : ""}`}>
+    <div className={`event-card${open ? " event-card--open" : ""}${isPast ? " event-card--past" : ""}`}>
       <button
         className="event-card-header"
         onClick={() => setOpen((o) => !o)}
@@ -42,7 +42,7 @@ export default function EventCard({ event }: { event: VPCEvent }) {
             {event.location ? `${event.location} · ` : ""}
             {date.full}
           </span>
-          <span className="event-card-summary">{event.summary}</span>
+          {!isPast && <span className="event-card-summary">{event.summary}</span>}
         </div>
         {hasDetails && (
           <span className="event-card-toggle" aria-hidden>
