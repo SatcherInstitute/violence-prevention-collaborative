@@ -5,11 +5,29 @@ export const metadata: Metadata = {
   title: "Violence Prevention Collaborative of Metro Atlanta",
   description:
     "Gun violence is a public health emergency. The Violence Prevention Collaborative unites 100 Black Men, The King Center, and MSM to coordinate research, data, and community action across Metro Atlanta.",
+  metadataBase: new URL("https://vpcatlanta.org"),
   openGraph: {
     title: "Violence Prevention Collaborative of Metro Atlanta",
     description:
       "Gun violence is a public health emergency. The Violence Prevention Collaborative unites 100 Black Men, The King Center, and MSM to coordinate research, data, and community action across Metro Atlanta.",
+    url: "https://vpcatlanta.org",
+    siteName: "Violence Prevention Collaborative of Metro Atlanta",
     type: "website",
+    images: [
+      {
+        url: "/images/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Violence Prevention Collaborative of Metro Atlanta",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Violence Prevention Collaborative of Metro Atlanta",
+    description:
+      "Gun violence is a public health emergency. The Violence Prevention Collaborative unites 100 Black Men, The King Center, and MSM to coordinate research, data, and community action across Metro Atlanta.",
+    images: ["/images/og-image.png"],
   },
 };
 
