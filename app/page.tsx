@@ -104,7 +104,7 @@ export default function Home() {
                 Satcher Institute at Morehouse School of Medicine
               </h3>
               <p>
-                The Satcher Institute provides scientific leadership and data strategy for the Collaborative, including the Health Equity Tracker, an accessible tool for analyzing health disparities and gun violence trends across Metro Atlanta.
+                The Satcher Institute provides scientific leadership and data strategy for the Collaborative, including the Health Equity Tracker, a public data tool for tracking health and safety disparities by race, age, and geography.
               </p>
               <h3>100 Black Men of Atlanta</h3>
               <p>
