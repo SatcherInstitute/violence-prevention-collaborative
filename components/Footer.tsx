@@ -33,6 +33,55 @@ function IconYouTube() {
 export default function Footer() {
   return (
     <footer className="site-footer">
+      <div className="site-footer-inner">
+
+        <div className="footer-col footer-col--brand">
+          <p className="footer-org-name">Violence Prevention Collaborative of Metro Atlanta</p>
+          <a href="mailto:bhammond@msm.edu" className="footer-contact-link">
+            Email Us
+          </a>
+        </div>
+
+        <div className="footer-col">
+          <div className="overline footer-label">Member Organizations</div>
+
+          <div className="footer-org-group">
+            <a href="https://satcherinstitute.org" target="_blank" rel="noopener noreferrer" className="footer-link">
+              Satcher Institute
+            </a>
+            <div className="footer-social-row">
+              <a href="https://www.instagram.com/satcherhealth/" target="_blank" rel="noopener noreferrer" className="footer-social-link" aria-label="Satcher Institute on Instagram"><IconInstagram /></a>
+              <a href="https://www.linkedin.com/company/satcherhealth/" target="_blank" rel="noopener noreferrer" className="footer-social-link" aria-label="Satcher Institute on LinkedIn"><IconLinkedIn /></a>
+              <a href="https://www.youtube.com/@SatcherHealth" target="_blank" rel="noopener noreferrer" className="footer-social-link" aria-label="Satcher Institute on YouTube"><IconYouTube /></a>
+            </div>
+          </div>
+
+          <div className="footer-org-group">
+            <a href="https://100blackmen-atlanta.org/" target="_blank" rel="noopener noreferrer" className="footer-link">
+              100 Black Men of Atlanta
+            </a>
+            <div className="footer-social-row">
+              <a href="https://www.instagram.com/100blackmenatl/" target="_blank" rel="noopener noreferrer" className="footer-social-link" aria-label="100 Black Men of Atlanta on Instagram"><IconInstagram /></a>
+              <a href="https://www.facebook.com/100BlackMenofAtlanta/" target="_blank" rel="noopener noreferrer" className="footer-social-link" aria-label="100 Black Men of Atlanta on Facebook"><IconFacebook /></a>
+              <a href="https://www.linkedin.com/company/100blackmenatlanta/" target="_blank" rel="noopener noreferrer" className="footer-social-link" aria-label="100 Black Men of Atlanta on LinkedIn"><IconLinkedIn /></a>
+              <a href="https://www.youtube.com/c/100BlackMenofAtlantaInc" target="_blank" rel="noopener noreferrer" className="footer-social-link" aria-label="100 Black Men of Atlanta on YouTube"><IconYouTube /></a>
+            </div>
+          </div>
+
+          <div className="footer-org-group">
+            <a href="https://thekingcenter.org" target="_blank" rel="noopener noreferrer" className="footer-link">
+              The King Center
+            </a>
+            <div className="footer-social-row">
+              <a href="https://www.facebook.com/thekingcenter" target="_blank" rel="noopener noreferrer" className="footer-social-link" aria-label="The King Center on Facebook"><IconFacebook /></a>
+              <a href="https://www.linkedin.com/company/the-king-center-for-nonviolent-social-change/" target="_blank" rel="noopener noreferrer" className="footer-social-link" aria-label="The King Center on LinkedIn"><IconLinkedIn /></a>
+              <a href="https://www.youtube.com/user/TheKingCenter" target="_blank" rel="noopener noreferrer" className="footer-social-link" aria-label="The King Center on YouTube"><IconYouTube /></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
       <div className="site-footer-bottom">
         <p className="footer-copyright">
           &copy; {new Date().getFullYear()} Violence Prevention Collaborative of Metro Atlanta
