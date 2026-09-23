@@ -27,7 +27,7 @@ export interface Resource {
 }
 
 export const resources: Resource[] = [
-  // Data & Research
+  // --- Data & Research ---
   {
     id: "health-equity-tracker",
     title: "Health Equity Tracker",
@@ -59,7 +59,7 @@ export const resources: Resource[] = [
     tags: ["data", "atlanta", "research"],
   },
 
-  // Community Programs
+  // --- Community Programs ---
   {
     id: "100bm-anti-gun-violence",
     title: "Anti-Gun Violence Campaign",
@@ -81,7 +81,7 @@ export const resources: Resource[] = [
     tags: ["community", "crisis-intervention", "national"],
   },
 
-  // Education & Training
+  // --- Education & Training ---
   {
     id: "nonviolence365",
     title: "Nonviolence365® Training",
@@ -103,7 +103,7 @@ export const resources: Resource[] = [
     tags: ["research", "training", "national", "policy"],
   },
 
-  // Policy & Advocacy
+  // --- Policy & Advocacy ---
   {
     id: "everytown-research",
     title: "Everytown Research & Policy",
@@ -125,7 +125,7 @@ export const resources: Resource[] = [
     tags: ["policy", "atlanta", "community"],
   },
 
-  // Health Services
+  // --- Health Services ---
   {
     id: "grady-trauma",
     title: "Grady Hospital Trauma Center",
@@ -137,7 +137,7 @@ export const resources: Resource[] = [
     tags: ["health", "crisis-intervention", "atlanta"],
   },
 
-  // Crisis Intervention
+  // --- Crisis Intervention ---
   {
     id: "988-lifeline",
     title: "988 Suicide & Crisis Lifeline",
