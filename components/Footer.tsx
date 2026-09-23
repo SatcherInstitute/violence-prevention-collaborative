@@ -1,3 +1,11 @@
+function IconEmail() {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+    </svg>
+  );
+}
+
 function IconInstagram() {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
@@ -36,10 +44,18 @@ export default function Footer() {
       <div className="site-footer-inner">
 
         <div className="footer-col footer-col--brand">
-          <p className="footer-org-name" style={{ color: 'var(--color-yellow)' }}>Violence Prevention Collaborative of Metro Atlanta</p>
-          <a href="mailto:bhammond@msm.edu" className="footer-social-link" style={{ fontSize: 'var(--text-sm)', gap: '4px' }}>
-            Email: bhammond@msm.edu
-          </a>
+          <p className="footer-org-name">
+            Violence Prevention Collaborative
+            <br />
+            <span className="footer-org-subtitle">of Metro Atlanta</span>
+          </p>
+          <div className="footer-email-section">
+            <div className="overline footer-label">Email Us</div>
+            <a href="mailto:bhammond@msm.edu" className="footer-email-link">
+              <IconEmail />
+              bhammond@msm.edu
+            </a>
+          </div>
         </div>
 
         <div className="footer-col">

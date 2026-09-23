@@ -1467,6 +1467,34 @@ h3.yellow {
   margin: 0;
 }
 
+.footer-org-subtitle {
+  color: var(--color-yellow);
+  font-variant-caps: small-caps;
+  letter-spacing: 0.06em;
+}
+
+.footer-email-section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.footer-email-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0 6px 6px;
+  color: rgba(255, 255, 255, 0.75);
+  font-family: var(--font-condensed);
+  font-size: var(--text-base);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-email-link:hover {
+  color: var(--color-yellow);
+}
+
 .site-footer p {
   color: rgba(255, 255, 255, 0.72);
   font-size: var(--text-base);
