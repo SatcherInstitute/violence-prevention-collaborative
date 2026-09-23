@@ -36,14 +36,13 @@ export default function Footer() {
       <div className="site-footer-inner">
 
         <div className="footer-col footer-col--brand">
-          <p className="footer-org-name">Violence Prevention Collaborative of Metro Atlanta</p>
-          <a href="mailto:bhammond@msm.edu" className="footer-contact-link">
-            bhammond@msm.edu
+          <p className="footer-org-name" style={{ color: 'var(--color-yellow)' }}>Violence Prevention Collaborative of Metro Atlanta</p>
+          <a href="mailto:bhammond@msm.edu" className="footer-social-link" style={{ fontSize: 'var(--text-sm)', gap: '4px' }}>
+            Email: bhammond@msm.edu
           </a>
         </div>
 
         <div className="footer-col">
-          <div className="overline footer-label">Member Organizations</div>
 
           <div className="footer-org-group">
             <a href="https://satcherinstitute.org" target="_blank" rel="noopener noreferrer" className="footer-link">
