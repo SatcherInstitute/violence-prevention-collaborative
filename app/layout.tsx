@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import "./vpc.css";
+import { sourceSans, roboto, robotoCondensed, bitter } from "./fonts";
+
+const fontVariables = `${sourceSans.variable} ${roboto.variable} ${robotoCondensed.variable} ${bitter.variable}`;
 
 export const metadata: Metadata = {
   title: "Violence Prevention Collaborative of Metro Atlanta",
@@ -37,23 +40,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className={fontVariables}>
       <head>
         <script dangerouslySetInnerHTML={{ __html: `(function(){var s=localStorage.getItem('theme');var sys=window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',s||sys);})();` }} />
         <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
         <link rel="apple-touch-icon" href="/images/webclip.png" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <script
-          type="text/javascript"
-          src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
-        />
-        <script
-          type="text/javascript"
-          dangerouslySetInnerHTML={{
-            __html: `WebFont.load({ google: { families: ["Bitter:400,700,400italic","IBM Plex Mono:500,600","Roboto:300,400,500,600,700","Roboto Condensed:300,400,500,600,700","Source Sans 3:400,600","Source Serif 4:400,700"] } });`,
-          }}
-        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

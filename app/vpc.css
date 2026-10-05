@@ -24,11 +24,11 @@
   --color-border:       #eaedf0;
   --color-platinum:     #edeff3;
 
-  /* Typography */
-  --font-sans:      "Source Sans 3", sans-serif;
-  --font-roboto:    Roboto, sans-serif;
-  --font-condensed: "Roboto Condensed", sans-serif;
-  --font-serif:     Bitter, serif;
+  /* Typography — font files are self-hosted via next/font/google (see app/fonts.ts) */
+  --font-sans:      var(--ff-source-sans), sans-serif;
+  --font-roboto:    var(--ff-roboto), sans-serif;
+  --font-condensed: var(--ff-roboto-condensed), sans-serif;
+  --font-serif:     var(--ff-bitter), serif;
 
   /* Type scale */
   --text-xs:   0.75rem;
@@ -565,11 +565,6 @@ h3.yellow {
   text-decoration: none;
 }
 
-.h6-heading.vpc-card-heading {
-  color: var(--color-jet);
-  text-align: center;
-}
-
 .tiny-text {
   font-family: var(--font-condensed);
   color: var(--color-jet);
@@ -792,71 +787,6 @@ h3.yellow {
   margin-top: 40px;
 }
 
-.vpc-card-grid {
-  display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 24px;
-}
-
-.vpc-card {
-  display: flex;
-  flex-flow: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 40px;
-  background-color: var(--color-white-62);
-  border: 1px solid var(--color-border);
-  border-radius: 8px;
-  padding: 24px;
-  text-decoration: none;
-  overflow: hidden;
-  transform: translate(0);
-  transition: box-shadow 0.3s, border-color 0.3s, transform 0.3s;
-}
-
-.vpc-card:hover {
-  border-color: transparent;
-  transform: translate(0, -4px);
-  box-shadow: 0 24px 64px rgba(224, 224, 224, 0.48);
-}
-
-.vpc-logo-frame {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff;
-  border-radius: 8px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 8px;
-  box-shadow: 0 24px 64px rgba(224, 224, 224, 0.48);
-}
-
-.vpc-logo-card.tkc {
-  width: 100%;
-  min-height: 120px;
-}
-
-.vpc-logo-card.bmoa {
-  max-height: 100px;
-  margin: 8px;
-}
-
-.vpc-logo-card.shli {
-  width: auto;
-  height: auto;
-  max-height: 100px;
-  max-width: 100%;
-}
-
-.org-and-button-container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  gap: 8px;
-}
-
 .outlined-cta {
   display: flex;
   flex-direction: row;
@@ -975,14 +905,11 @@ h3.yellow {
   margin-bottom: 0.5rem;
 }
 
-.connect-heading {
-  font-family: var(--font-serif);
-  font-size: var(--text-h2);
-  color: var(--color-dark);
-  margin: 0 0 1.5rem;
-  line-height: 1.1;
+.org-link-row {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 16px;
 }
-
 
 .connect-contact {
   border-top: 1px solid var(--color-border);
@@ -1257,11 +1184,28 @@ h3.yellow {
 }
 
 .event-card--past {
-  opacity: 0.6;
+  border-color: rgba(255, 255, 255, 0.08);
 }
 
 .event-card--past:hover {
-  opacity: 1;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.event-card--past .event-card-title {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.event-card--past .event-date-day {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.event-card--past .event-card-location {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.event-card--past:hover .event-card-title,
+.event-card--past:hover .event-date-day {
+  color: #fff;
 }
 
 .event-card-header {
@@ -1652,24 +1596,6 @@ h3.yellow {
     gap: 32px;
   }
 
-  .vpc-card {
-    gap: 16px;
-  }
-
-  .vpc-card-grid {
-    gap: 16px;
-    grid-template-columns: 1fr;
-  }
-
-  .vpc-logo-card {
-    max-height: 10vw;
-  }
-
-  .vpc-logo-card.tkc {
-    max-width: 170px;
-    height: 100%;
-  }
-
   .gallery-image {
     min-width: 0;
     min-height: 180px;
@@ -1720,20 +1646,6 @@ h3.yellow {
     justify-content: center;
   }
 
-  .org-and-button-container {
-    margin-top: 16px;
-  }
-
-  .vpc-logo-card {
-    max-width: 300px;
-    max-height: 10vw;
-    height: 100%;
-  }
-
-  .vpc-logo-card.tkc {
-    max-width: 140px;
-  }
-
   .lightbox-container {
     flex-flow: wrap;
   }
@@ -1767,22 +1679,9 @@ h3.yellow {
     max-width: min(220px, 75vw);
   }
 
-  .vpc-logo-frame {
-    margin-left: auto;
-  }
-
   .outlined-cta {
     width: 100%;
     min-width: 0;
-  }
-
-  .vpc-card-grid {
-    grid-template-columns: 1fr;
-    gap: 32px;
-  }
-
-  .vpc-logo-card {
-    max-width: 260px;
   }
 
   .insta-post-wrap {
@@ -1951,6 +1850,27 @@ h3.yellow {
 
 [data-theme="light"] .event-card:hover {
   border-color: var(--color-light-blue);
+}
+
+[data-theme="light"] .event-card--past {
+  border-color: var(--color-border);
+}
+
+[data-theme="light"] .event-card--past .event-card-title {
+  color: rgba(43, 43, 43, 0.65);
+}
+
+[data-theme="light"] .event-card--past .event-date-day {
+  color: rgba(43, 43, 43, 0.55);
+}
+
+[data-theme="light"] .event-card--past .event-card-location {
+  color: rgba(43, 43, 43, 0.4);
+}
+
+[data-theme="light"] .event-card--past:hover .event-card-title,
+[data-theme="light"] .event-card--past:hover .event-date-day {
+  color: var(--color-dark);
 }
 
 [data-theme="light"] .event-date-day {

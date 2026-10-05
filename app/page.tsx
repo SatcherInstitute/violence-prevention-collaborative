@@ -163,64 +163,39 @@ export default function Home() {
       {/* Connect section — orgs + contact */}
       <section id="contact" className="connect-section">
         <div className="connect-inner">
-          <p className="overline connect-overline">Connect</p>
-          <h2 className="connect-heading">Member Organizations</h2>
+          <p className="overline connect-overline">Contact</p>
 
-          <div className="w-layout-grid vpc-card-grid">
-            <div className="vpc-card shli">
-              <div className="vpc-logo-frame">
-                <img src="/images/SHLI_WORDMARKS_SHLI_white_H.avif" alt="Satcher Institute at Morehouse School of Medicine logo" width="200" height="120" className="vpc-logo-card shli" />
+          <p className="connect-body">
+            To learn more about our member organizations, visit their websites directly:
+          </p>
+          <div className="org-link-row">
+            <a href="https://satcherinstitute.org" target="_blank" rel="noopener noreferrer" className="outlined-cta w-inline-block">
+              <div className="outlined-cta-text">Satcher Institute</div>
+              <div className="open-in-new-icon shli-blue w-embed">
+                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="currentColor">
+                  <path d="M216-144q-29.7 0-50.85-21.15Q144-186.3 144-216v-528q0-29.7 21.15-50.85Q186.3-816 216-816h264v72H216v528h528v-264h72v264q0 29.7-21.15 50.85Q773.7-144 744-144H216Zm171-192-51-51 357-357H576v-72h240v240h-72v-117L387-336Z" />
+                </svg>
               </div>
-              <div className="org-and-button-container">
-                <h6 className="h6-heading vpc-card-heading">Satcher Institute at Morehouse School of Medicine</h6>
-                <a href="https://satcherinstitute.org" target="_blank" rel="noopener noreferrer" className="outlined-cta w-inline-block">
-                  <div className="outlined-cta-text">Learn More</div>
-                  <div className="open-in-new-icon shli-blue w-embed">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="currentColor">
-                      <path d="M216-144q-29.7 0-50.85-21.15Q144-186.3 144-216v-528q0-29.7 21.15-50.85Q186.3-816 216-816h264v72H216v528h528v-264h72v264q0 29.7-21.15 50.85Q773.7-144 744-144H216Zm171-192-51-51 357-357H576v-72h240v240h-72v-117L387-336Z" />
-                    </svg>
-                  </div>
-                </a>
+            </a>
+            <a href="https://100blackmen-atlanta.org/" target="_blank" rel="noopener noreferrer" className="outlined-cta w-inline-block">
+              <div className="outlined-cta-text">100 Black Men of Atlanta</div>
+              <div className="open-in-new-icon shli-blue w-embed">
+                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="currentColor">
+                  <path d="M216-144q-29.7 0-50.85-21.15Q144-186.3 144-216v-528q0-29.7 21.15-50.85Q186.3-816 216-816h264v72H216v528h528v-264h72v264q0 29.7-21.15 50.85Q773.7-144 744-144H216Zm171-192-51-51 357-357H576v-72h240v240h-72v-117L387-336Z" />
+                </svg>
               </div>
-            </div>
-
-            <div className="vpc-card bmoa">
-              <div className="vpc-logo-frame">
-                <img src="/images/100LOGO5X5BW-Transparency-white.webp" alt="100 Black Men of Atlanta logo" width="120" height="120" className="vpc-logo-card bmoa" />
+            </a>
+            <a href="https://thekingcenter.org" target="_blank" rel="noopener noreferrer" className="outlined-cta w-inline-block">
+              <div className="outlined-cta-text">The King Center</div>
+              <div className="open-in-new-icon shli-blue w-embed">
+                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="currentColor">
+                  <path d="M216-144q-29.7 0-50.85-21.15Q144-186.3 144-216v-528q0-29.7 21.15-50.85Q186.3-816 216-816h264v72H216v528h528v-264h72v264q0 29.7-21.15 50.85Q773.7-144 744-144H216Zm171-192-51-51 357-357H576v-72h240v240h-72v-117L387-336Z" />
+                </svg>
               </div>
-              <div className="org-and-button-container">
-                <h6 className="h6-heading vpc-card-heading">100 Black Men of Atlanta Inc.</h6>
-                <a href="https://100blackmen-atlanta.org/" target="_blank" rel="noopener noreferrer" className="outlined-cta w-inline-block">
-                  <div className="outlined-cta-text">Learn More</div>
-                  <div className="open-in-new-icon shli-blue w-embed">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="currentColor">
-                      <path d="M216-144q-29.7 0-50.85-21.15Q144-186.3 144-216v-528q0-29.7 21.15-50.85Q186.3-816 216-816h264v72H216v528h528v-264h72v264q0 29.7-21.15 50.85Q773.7-144 744-144H216Zm171-192-51-51 357-357H576v-72h240v240h-72v-117L387-336Z" />
-                    </svg>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div className="vpc-card tkc">
-              <div className="vpc-logo-frame">
-                <img src="/images/kx_600x.webp" alt="The King Center for Nonviolent Social Change logo" width="120" height="120" className="vpc-logo-card tkc" />
-              </div>
-              <div className="org-and-button-container">
-                <h6 className="h6-heading vpc-card-heading">The King Center for Nonviolent Social Change</h6>
-                <a href="https://thekingcenter.org" target="_blank" rel="noopener noreferrer" className="outlined-cta w-inline-block">
-                  <div className="outlined-cta-text">Learn More</div>
-                  <div className="open-in-new-icon shli-blue w-embed">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="currentColor">
-                      <path d="M216-144q-29.7 0-50.85-21.15Q144-186.3 144-216v-528q0-29.7 21.15-50.85Q186.3-816 216-816h264v72H216v528h528v-264h72v264q0 29.7-21.15 50.85Q773.7-144 744-144H216Zm171-192-51-51 357-357H576v-72h240v240h-72v-117L387-336Z" />
-                    </svg>
-                  </div>
-                </a>
-              </div>
-            </div>
+            </a>
           </div>
 
           <div className="connect-contact">
-            <h2 className="connect-heading">Contact</h2>
             <p className="connect-body">For general inquiries or questions about this website:</p>
             <a href="mailto:bhammond@msm.edu" className="contact-email">bhammond@msm.edu</a>
           </div>
