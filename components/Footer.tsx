@@ -50,7 +50,7 @@ export default function Footer() {
             <span className="footer-org-subtitle">of Metro Atlanta</span>
           </p>
           <div className="footer-email-section">
-            <div className="overline footer-label">Email Us</div>
+            <div className="footer-org-name footer-email-heading">Email Us</div>
             <a href="mailto:bhammond@msm.edu" className="footer-email-link">
               <IconEmail />
               bhammond@msm.edu

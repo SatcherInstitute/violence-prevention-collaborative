@@ -552,11 +552,6 @@ h3.yellow {
   text-decoration: none;
 }
 
-.overline.footer-label {
-  color: #fff;
-  margin-bottom: 15px;
-}
-
 .h6-heading {
   font-family: var(--font-roboto);
   color: var(--color-yellow);
@@ -1455,7 +1450,7 @@ h3.yellow {
 }
 
 .footer-col--brand {
-  gap: 12px;
+  gap: 1rem;
 }
 
 .footer-org-name {
@@ -1467,16 +1462,23 @@ h3.yellow {
   margin: 0;
 }
 
+.footer-email-heading {
+  margin-bottom: 0;
+}
+
 .footer-org-subtitle {
+  font-family: var(--font-condensed);
+  font-size: 0.7rem;
+  font-weight: 400;
   color: var(--color-yellow);
-  font-variant-caps: small-caps;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .footer-email-section {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 5px;
 }
 
 .footer-email-link {
