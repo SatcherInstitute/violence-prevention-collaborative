@@ -1,6 +1,19 @@
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import EventsList from "@/components/EventsList";
+import { foundingCollective, type Person } from "@/app/data/people";
+
+const coChairs = foundingCollective.filter((p) => p.coChair);
+const members = foundingCollective.filter((p) => !p.coChair);
+
+function PersonItem({ person }: { person: Person }) {
+  return (
+    <li>
+      <strong>{person.name}</strong>
+      {person.title && <>, {person.title}</>}
+    </li>
+  );
+}
 
 export default function Home() {
   return (
@@ -120,6 +133,16 @@ export default function Home() {
               <p>
                 Current and former public health leaders from the CDC and Georgia Department of Public Health advise on evidence-based practices, data integration, and regional analysis.
               </p>
+              {/* Founding Collective */}
+              <h2 id="founding-collective">Founding Collective</h2>
+              <h3>Co-Chairs</h3>
+              <ul>
+                {coChairs.map((p) => <PersonItem key={p.name} person={p} />)}
+              </ul>
+              <h3>Members</h3>
+              <ul>
+                {members.map((p) => <PersonItem key={p.name} person={p} />)}
+              </ul>
               <h2>Our Focus Areas</h2>
               <ul>
                 <li><strong>Data &amp; Regional Analysis:</strong> Demographic and geographic analysis across Metro Atlanta to support targeted prevention strategies.</li>
