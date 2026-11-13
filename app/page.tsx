@@ -27,7 +27,7 @@ export default function Home() {
             <h1 className="hero-heading vpc-header">
               Violence Prevention Collaborative
               <br />
-              of Metro Atlanta
+              <span className="hero-heading-sub">of Metro Atlanta</span>
             </h1>
 
             <h2 className="tagline">
