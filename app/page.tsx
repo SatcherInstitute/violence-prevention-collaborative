@@ -139,7 +139,7 @@ export default function Home() {
               <ul>
                 {coChairs.map((p) => <PersonItem key={p.name} person={p} />)}
               </ul>
-              <h3>Members</h3>
+              <h3>Individual Members</h3>
               <ul>
                 {members.map((p) => <PersonItem key={p.name} person={p} />)}
               </ul>
