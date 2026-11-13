@@ -49,13 +49,6 @@ export default function Footer() {
             <br />
             <span className="footer-org-subtitle">of Metro Atlanta</span>
           </p>
-          <div className="footer-email-section">
-            <div className="footer-org-name footer-email-heading">Email Us</div>
-            <a href="mailto:bhammond@msm.edu" className="footer-email-link">
-              <IconEmail />
-              bhammond@msm.edu
-            </a>
-          </div>
         </div>
 
         <div className="footer-col">
@@ -91,6 +84,16 @@ export default function Footer() {
               <a href="https://www.facebook.com/thekingcenter" target="_blank" rel="noopener noreferrer" className="footer-social-link" aria-label="The King Center on Facebook"><IconFacebook /></a>
               <a href="https://www.linkedin.com/company/the-king-center-for-nonviolent-social-change/" target="_blank" rel="noopener noreferrer" className="footer-social-link" aria-label="The King Center on LinkedIn"><IconLinkedIn /></a>
               <a href="https://www.youtube.com/user/TheKingCenter" target="_blank" rel="noopener noreferrer" className="footer-social-link" aria-label="The King Center on YouTube"><IconYouTube /></a>
+            </div>
+          </div>
+
+          <div className="footer-org-group">
+            <span className="footer-link">Email Us</span>
+            <div className="footer-social-row">
+              <a href="mailto:bhammond@msm.edu" className="footer-social-link footer-email-link">
+                <IconEmail />
+                bhammond@msm.edu
+              </a>
             </div>
           </div>
         </div>
