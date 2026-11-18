@@ -16,6 +16,7 @@ export const foundingCollective: Person[] = [
   { name: "Alex E. Crosby, MD, MPH", title: "Medical Epidemiologist, Department of Community Health and Preventive Medicine, Morehouse School of Medicine" },
   { name: "Benjamin Hammond", title: "Senior Software Engineer and Team Lead, Health Equity Tracker, Satcher Institute, Morehouse School of Medicine" },
   { name: "Sandra Harris-Hooker, PhD", title: "Interim Executive Director, Satcher Health Leadership Institute; Senior Vice President for External Affairs and Innovation; Professor, Department of Pathology and Medical Education, Morehouse School of Medicine" },
+  { name: "Barbara A. Harrison" },
   { name: "Evan Martin, LCSW", title: "Project Director; Associate Professor, Morehouse School of Medicine; Community Therapist" },
   { name: "Eric Warren II, MS", title: "Software Engineer, Health Equity Tracker, Satcher Institute, Morehouse School of Medicine" },
   { name: "Ashley Watkins", title: "Senior Budget Analyst, Satcher Institute, Morehouse School of Medicine" },
